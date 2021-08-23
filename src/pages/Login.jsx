@@ -20,7 +20,7 @@ const Login = () => {
   const toast = useToast();
   const history = useHistory();
 
-  // ** getting signup function from auth context
+  // ** getting required functions and const from auth context
   const { login, loading, setLoading } = useAuth();
 
   // ** refs for the form inputs
@@ -58,7 +58,6 @@ const Login = () => {
     }
   };
 
-  /*eslint-disable */
   return (
     <>
       <Container alignItems="center" centerContent>

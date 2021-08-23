@@ -29,8 +29,14 @@ const Dashboard = () => {
       <h1>Yolo</h1>
       <h1>{`logged In user email: ${currentUser?.email}`}</h1>
       <Heading size="2xl">Dashboard</Heading>
-      <Button colorScheme="teal" onClick={() => handleLogout()} m={2} type="submit">
-        Sign Out
+      <Button
+        isDisabled={!currentUser}
+        colorScheme="teal"
+        onClick={() => handleLogout()}
+        m={2}
+        type="submit"
+      >
+        {currentUser ? 'Sign Out' : 'No User signed In'}
       </Button>
     </>
   );
