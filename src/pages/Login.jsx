@@ -29,7 +29,6 @@ const Login = () => {
 
   // ** this function is called when the user clicks the submit button which checks that the input are not empty and the password match
   const handleSubmit = async () => {
-    console.log('yolo');
     if (!emailRef.current.value || !passwordRef.current.value) {
       toast({
         title: 'Cannot Register User!',
@@ -60,7 +59,7 @@ const Login = () => {
 
   return (
     <>
-      <Container alignItems="center" centerContent>
+      <Container centerContent height="100vh">
         <Heading size="2xl">Login User</Heading>
         <FormControl m={2} id="email">
           <FormLabel>Email address</FormLabel>

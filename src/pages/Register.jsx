@@ -26,11 +26,15 @@ const Register = () => {
   // ** refs for the form inputs
   const emailRef = useRef();
   const passwordRef = useRef();
-  const repeatPasswordRef = useRef();
+  const confirmPasswordRef = useRef();
 
   // ** this function is called when the user clicks the submit button which checks that the input are not empty and the password match
   const handleSubmit = async () => {
-    if (!emailRef.current.value || !passwordRef.current.value || !repeatPasswordRef.current.value) {
+    if (
+      !emailRef.current.value ||
+      !passwordRef.current.value ||
+      !confirmPasswordRef.current.value
+    ) {
       toast({
         title: 'Cannot Register User!',
         description: 'These fields cannot be empty!',
@@ -38,7 +42,7 @@ const Register = () => {
         duration: 3000,
         isClosable: true,
       });
-    } else if (passwordRef.current.value !== repeatPasswordRef.current.value) {
+    } else if (passwordRef.current.value !== confirmPasswordRef.current.value) {
       return toast({
         title: 'Cannot Register User!',
         description: 'Passwords do not match!',
@@ -81,8 +85,8 @@ const Register = () => {
           <Input ref={passwordRef} type="password" />
         </FormControl>
         <FormControl m={2} id="repeat-password">
-          <FormLabel>Repeat Password</FormLabel>
-          <Input ref={repeatPasswordRef} type="password" />
+          <FormLabel>Confirm Password</FormLabel>
+          <Input ref={confirmPasswordRef} type="password" />
         </FormControl>
         <Button
           colorScheme="teal"

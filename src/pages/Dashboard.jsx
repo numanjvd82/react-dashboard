@@ -16,7 +16,7 @@ const Dashboard = () => {
       history.push('/login');
     } catch (error) {
       toast({
-        title: 'Failed to Sign Out ',
+        title: 'Failed to Log Out ',
         status: 'error',
         duration: 3000,
         isClosable: true,
