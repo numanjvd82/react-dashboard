@@ -11,6 +11,10 @@ const navigationRoutes = [
     path: '/calendar',
     name: 'Calender',
   },
+  {
+    path: '/chat',
+    name: 'Chat',
+  },
 ];
 
 export { navigationRoutes };

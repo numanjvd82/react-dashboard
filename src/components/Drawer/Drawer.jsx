@@ -11,7 +11,14 @@ import {
 } from '@chakra-ui/react';
 
 const DrawerComp = ({ isOpen, onOpen, onClose }) => (
-  <Drawer placement="left" size="xs" isOpen={isOpen} onOpen={onOpen} onClose={onClose}>
+  <Drawer
+    isFullHeight="true"
+    placement="left"
+    size="xs"
+    isOpen={isOpen}
+    onOpen={onOpen}
+    onClose={onClose}
+  >
     <DrawerContent>
       <DrawerHeader borderBottomWidth="1px">
         Dashboard
