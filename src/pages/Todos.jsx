@@ -1,7 +1,13 @@
+import { Container, Heading } from '@chakra-ui/react';
+
 const Todos = () => {
   const history = '';
 
-  return <h1>Todos</h1>;
+  return (
+    <Container centerContent>
+      <Heading>Todos</Heading>
+    </Container>
+  );
 };
 
 export default Todos;

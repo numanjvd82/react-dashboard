@@ -4,16 +4,12 @@ import { IconButton, useDisclosure } from '@chakra-ui/react';
 import { GiHamburgerMenu } from 'react-icons/gi';
 // * importing Sidebar Component
 import DrawerComp from '../Drawer/Drawer';
-// * importing our Current user state from auth Context
-import { useAuth } from '../../context/AuthContext';
 
 const Sidebar = () => {
   // * these vars are being destructured from the useDisclosure hook which is responsible for opening and closing the sidebar: //
   // ? isOpen: tells us the sidebar state, onOpen: () => open the sidebar, onClose: () => close the sidebar //
   // ! more info on chakra ui documentation
   const { isOpen, onOpen, onClose } = useDisclosure();
-
-  const { currentUser } = useAuth();
 
   return (
     <>

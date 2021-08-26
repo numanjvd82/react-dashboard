@@ -9,11 +9,12 @@ import Todos from '../pages/Todos';
 import PrivateRoute from './PrivateRoutes';
 // * importing components
 import Sidebar from '../components/Sidebar/Sidebar';
+import Header from '../components/Header';
 
 const Routes = () => (
   // * We can use our custom Private Route on Routes which we want to protect just like our dashboard route
   <Router>
-    <Sidebar />
+    <Header />
     <Switch>
       <PrivateRoute exact path="/" component={Dashboard} />
       <PrivateRoute path="/todos" component={Todos} />
