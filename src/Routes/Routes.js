@@ -1,4 +1,4 @@
-// * importing essential components
+// * importing router components
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 // * importing pages
 import Login from '../pages/Login';
@@ -7,6 +7,7 @@ import Dashboard from '../pages/Dashboard';
 import Todos from '../pages/Todos';
 // * importing our Custom Private Route
 import PrivateRoute from './PrivateRoutes';
+// * importing components
 import Sidebar from '../components/Sidebar/Sidebar';
 
 const Routes = () => (

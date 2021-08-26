@@ -9,6 +9,7 @@ import {
   DrawerFooter,
   DrawerHeader,
 } from '@chakra-ui/react';
+import SidebarBody from '../Sidebar/SidebarBody';
 
 const DrawerComp = ({ isOpen, onOpen, onClose }) => (
   <Drawer
@@ -25,7 +26,7 @@ const DrawerComp = ({ isOpen, onOpen, onClose }) => (
         <DrawerCloseButton />
       </DrawerHeader>
       <DrawerBody>
-        <h1>Hello world</h1>
+        <SidebarBody />
       </DrawerBody>
       <Divider />
       <DrawerFooter>
