@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
 import {
-  Button,
   Divider,
   Drawer,
   DrawerBody,
@@ -8,6 +7,7 @@ import {
   DrawerContent,
   DrawerFooter,
   DrawerHeader,
+  Text,
 } from '@chakra-ui/react';
 import SidebarBody from '../Sidebar/SidebarBody';
 
@@ -30,9 +30,11 @@ const DrawerComp = ({ isOpen, onOpen, onClose }) => (
       </DrawerBody>
       <Divider />
       <DrawerFooter>
-        <Button variant="ghost" bgColor="gray.400">
-          Proceed to Checkout
-        </Button>
+        <Text fontSize="1rem" fontWeight="semibold">
+          Copyright &copy;
+          {` ${new Date().getFullYear()} `}
+          by Numan Javed
+        </Text>
       </DrawerFooter>
     </DrawerContent>
   </Drawer>

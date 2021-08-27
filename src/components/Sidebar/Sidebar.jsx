@@ -7,7 +7,7 @@ import DrawerComp from '../Drawer/Drawer';
 
 const Sidebar = () => {
   // * these vars are being destructured from the useDisclosure hook which is responsible for opening and closing the sidebar: //
-  // ? isOpen: tells us the sidebar state, onOpen: () => open the sidebar, onClose: () => close the sidebar //
+  // ? isOpen: Boolean: tells us the sidebar state, onOpen: () => open the sidebar, onClose: () => close the sidebar //
   // ! more info on chakra ui documentation
   const { isOpen, onOpen, onClose } = useDisclosure();
 
@@ -17,7 +17,7 @@ const Sidebar = () => {
         // * onOpen sets the truthy value to open the sidebar and is supplied to our sidebar button
         onClick={onOpen}
         m={2}
-        colorScheme="teal"
+        colorScheme="gray"
         aria-label="Open Sidebar"
         icon={<GiHamburgerMenu />}
       />

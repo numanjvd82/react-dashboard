@@ -1,7 +1,6 @@
+// ! To add your own routes or delete the existing ones, edit the sidebar routes file
 // * importing Chakra UI components
 import { List, ListIcon, ListItem, Text } from '@chakra-ui/react';
-
-// * importing our icons,
 
 // * importing react router
 import { Link } from 'react-router-dom';
@@ -18,7 +17,7 @@ const SidebarBody = () => (
             key={id}
             _hover={{
               filter: `brightness(120%)`,
-              transform: 'scaleX(1.05) translateY(-3px)',
+              transform: 'scaleX(1.03) translateY(-2px)',
               backfaceVisibility: 'hidden',
               boxShadow: '-4px 38px 60px -15px rgba(0,0,0,0.37)',
             }}
@@ -30,7 +29,7 @@ const SidebarBody = () => (
             py={2}
             my={2}
           >
-            <ListIcon mx={1} w={7} h={7} color="white">
+            <ListIcon mx={2} w={7} h={7} color="white">
               {icon}
             </ListIcon>
             <Text mx={1} as="span" fontWeight="semibold" color="white">

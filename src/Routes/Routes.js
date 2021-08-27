@@ -8,7 +8,6 @@ import Todos from '../pages/Todos';
 // * importing our Custom Private Route
 import PrivateRoute from './PrivateRoutes';
 // * importing components
-import Sidebar from '../components/Sidebar/Sidebar';
 import Header from '../components/Header';
 
 const Routes = () => (
